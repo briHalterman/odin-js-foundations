@@ -40,12 +40,16 @@
 
     // loop from 1 to the entered number
     for (let i = 1; i <= answer; i++) {
+      // if the current number is divisible by 3 and 5 then print "FizzBuzz"
+      if (i % 3 === 0 && i % 5 === 0) {
+        console.log("FizzBuzz");
       // if the current number is divisible by 3, print "Fizz"
-      if (i % 3 === 0) {
+      } else if (i % 3 === 0) {
         console.log("Fizz");
       // if the current number is divisible by 5, print "Buzz"
       } else if (i % 5 === 0) {
         console.log("Buzz");
+      // otherwise print the number
       } else {
         console.log(i);
       }
